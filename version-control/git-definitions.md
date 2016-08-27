@@ -14,3 +14,5 @@
 
 * What is a merge conflict?
 		A merge conflict is when two different branches have altered the same items so git does not know which one should be used for the merge.
+
+		Smiley Face ---> =)
