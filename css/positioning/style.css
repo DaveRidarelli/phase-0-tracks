@@ -1,0 +1,24 @@
+.octoimage {
+	position: relative;
+	}
+
+#octopus {
+	margin: 163px 0 0 500px;
+	z-index: -1;
+}
+
+
+#glasses {
+	position: absolute;
+   top: 100px;
+   left: 545px;
+   z-index : 1;
+}
+
+	#hat {
+ 	position: absolute;
+    left: 488px;
+    top: -98px;
+    z-index: 2;
+}
+
