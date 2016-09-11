@@ -16,7 +16,7 @@ is more specific by cascading down from general to specific details. */
 
 /* A pseudoselector is something that changes the style when specific code is acted
 upon such as clicked or hovered over. This code makes the resume title turn lime green
-when clicked */
+when clicked. */
 
 #resume-title:active {
 	color: lime;
