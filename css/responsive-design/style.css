@@ -1,3 +1,8 @@
+body {
+  margin: auto;
+  max-width: 960px;
+}
+
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -9,11 +14,32 @@ cite {
   margin-top: 10px;
 }
 
-#external-links ul {	
-  list-style-type: none;
-  padding-left: 0px;
+#external-links {
+  width: 15%;
+  display: inline-block;
+  vertical-align: top;
+  }
+
+main {
+display: inline-block;
+  width: 60%;
+  vertical-align: top;
+  margin-left: 10%;
 }
 
+@media screen and (max-width: 500px) {
+  p {
+    width: 100%;
+    font-size: 1.5em;
+    }
+  }
+
+@media screen and (max-width: 500px) {
+  blockquote {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
@@ -26,7 +52,34 @@ figure {
   margin-right: 0px;
 }
 
+@media screen and(max-width: 500px) {
+  main {
+    display: block;
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #external-links {
+    display: block;
+    font-size: 75%;
+  }
+}
+
 figcaption {
   font-style: italic;
   text-align: right;
 }
+
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
+/* 1. To center the content of the entire page, you would need to make an id for all of the content of the whole website and then
+add a width (ex. 900px and then a margin of 0 auto.) this will make the left and right margins center the content. also, if you're using inline block elements, you can simply do a text align center on the parent element.
+2.Mobile first design is when the site is first developed for mobile use and then later developed to fit a desktop site. Icons might be expanded to text links etc.
+3. Float means that whatever is floating will be independent of the rest of the content of the site and can be designated to float to the left or right and the content of the site will wrap around the content that is floated.
+Pro's of display is that with an in-line block element, horizontal and vertical aligning is possible, but con is that you need to be aware of whitespace issues that can make two items that should be on one line get shifted because of the whitespace between the elements.
+Floats are great for making content go around the floated element, but are not ideal for centering.
+
