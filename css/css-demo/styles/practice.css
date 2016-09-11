@@ -1,3 +1,6 @@
+/* Cascading in CSS means that the style rule to be used will be the one that
+is more specific by cascading down from general to specific details... */
+
 #contact-info {
 	font-size: .8em;
 }
@@ -6,12 +9,23 @@
 	background-color: #e9e5dc;
 	border-radius: 25px;
 }
+
 .accomplishments {
 	font-size: .8em;
 }
+
+/* A pseudoselector is something that changes the style when specific code is acted
+upon such as clicked or hovered over. This code makes the resume title turn lime green
+when clicked. */
+
 #resume-title:active {
 	color: lime;
 }
+
+/* the '>' symbol can be used to select a specific element of another element. In our
+example we changed the font color of the h3 element within the volunteer-gig id 
+section pink. */
+
 .volunteer-gig > h3 {
 	color: pink;
 }
