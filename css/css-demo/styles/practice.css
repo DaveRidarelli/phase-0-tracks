@@ -1,0 +1,17 @@
+#contact-info {
+	font-size: .8em;
+}
+
+.job {
+	background-color: #e9e5dc;
+	border-radius: 25px;
+}
+.accomplishments {
+	font-size: .8em;
+}
+#resume-title:active {
+	color: lime;
+}
+.volunteer-gig > h3 {
+	color: pink;
+}
