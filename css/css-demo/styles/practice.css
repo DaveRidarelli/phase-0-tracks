@@ -1,7 +1,6 @@
 /* Cascading in CSS means that the style rule to be used will be the one that
 is more specific by cascading down from general to specific details. */
 
-
 #contact-info {
 	font-size: .8em;
 }
@@ -10,6 +9,7 @@ is more specific by cascading down from general to specific details. */
 	background-color: #e9e5dc;
 	border-radius: 25px;
 }
+
 .accomplishments {
 	font-size: .8em;
 }
