@@ -1,0 +1,30 @@
+	While outside elevator identify floor you would like to travel to.
+	
+	If floor is greater than current floor press the up button
+	If floor is less than current floor press the down button
+	If floor is equal to current floor do not use elevator
+	
+	When elevator doors open, enter elevator and stand in front of and facing the key pad.
+	
+	If up button was pushed add one to your current floor to see if that is your desired floor, if not add one to the next highest floor and check again. Continue process of adding one and checking until desired floor is found.
+	Press desired floor button.
+	Wait for current floor to equal desired floor on floor indicator.
+	When current floor matches desired floor, exit elevator. Congratulations.
+
+	If down button was pushed subtract one to your current floor to see if that is your desired floor, if not subtract one to the next lowest floor and check again. Continue process of subrtacting one and checking until desired floor is found.
+	Press desired floor button.
+	Wait for current floor to equal desired floor on floor indicator
+	When current floor matches desired floor, exit elevator. Congratulations.
+
+	If no numbers have matched desired floor yet press R button if desired floor is the roof, L button is desired floor is the lobby, and G button if desired floor is garage.
+	Wait for current floor to equal desired floor on floor indicator.
+	When current floor matches desired floor, exit elevator. Congratulations.
+
+	If no buttons match desired floor tell next human passerby your desired floor and they will push the button for you. When current floor matches desired floor, exit elevator. Congratulations.
+
+
+	----------------------------
+
+	Checking the mail after lunch.
+
+	Once lunch is completed stand up from table and push in chair. Look and turn towards front door. Walk towards it until staircase is reached. Step down staircase until no steps remain. Walk to front door. Unlock front door if locked. Open front door. Unlock screen door if locked. Open screen door. Step outside and turn left to mailbox. Open mailbox. If mail is inside take mail and hold in hand then close mailbox. If no mail is inside close mailbox. Turn left and walk inside. Close screen door behind you. Lock screen door. Close front door behind you. Lock front door. Walk to staircase. Step up staircase until no steps remain. Look towards table. Walk towards table. Place mail on table when reached. Success!!
