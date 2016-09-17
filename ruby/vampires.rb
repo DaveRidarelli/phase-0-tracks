@@ -47,21 +47,17 @@ until counter == number_of_employees
 	end
 
 	puts "Please type any allergies you have and type \"done\" when complete"
+		
+		allergy = "none"
+		while allergy != "done"
 		allergy = gets.chomp
-
-		if allergy == "sunshine"
-			vampire_status = "Probably a darn vampire"
-		else
-			while allergy != "done"
-				allergy = gets.chomp
 			
-				if allergy == "sunshine"
+			if allergy == "sunshine"
 					vampire_status = "Probably a darn vampire"
 					allergy = "done"
-				end
 			end
 		end
-	
+		
 	puts vampire_status
 	puts ""
 	counter += 1
