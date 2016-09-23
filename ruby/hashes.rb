@@ -39,6 +39,7 @@ client_info = {}
 	else
 		client_info[:loves_donuts] = false
 	end
+
 puts ""
 puts client_info
 puts ""
@@ -69,6 +70,7 @@ puts ""
 					client_info[key_update.to_sym] = value_update
 				end
 			end
+			
 			puts ""
 			puts "Thanks! Here's the latest info!"
 	end
