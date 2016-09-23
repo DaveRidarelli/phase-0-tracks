@@ -11,10 +11,10 @@
 client_info = {}
 
 	puts "Enter client's name"
-	client_info[:name] = gets.chomp
+	client_info[:name]	= gets.chomp
 
 	puts "Enter client's age"
-	client_info[:age] = gets.chomp.to_i
+	client_info[:age]	= gets.chomp.to_i
 
 	puts "Enter client's number of children"
 	client_info[:children] = gets.chomp.to_i
@@ -28,18 +28,17 @@ client_info = {}
 	puts "Does the client love donuts?"
 	client_info[:loves_donuts] = gets.chomp
 
-	if 	client_info[:super_rich] == "yes"
+	if client_info[:super_rich] == "yes"
 		client_info[:super_rich] = true
 	else
 		client_info[:super_rich] = false
 	end
 		
-	if 	client_info[:loves_donuts] == "yes" 
+	if client_info[:loves_donuts] == "yes" 
 		client_info[:loves_donuts] = true
 	else
 		client_info[:loves_donuts] = false
 	end
-
 puts ""
 puts client_info
 puts ""
@@ -70,10 +69,9 @@ puts ""
 					client_info[key_update.to_sym] = value_update
 				end
 			end
-
 			puts ""
 			puts "Thanks! Here's the latest info!"
-			puts ""
 	end
 		
 puts client_info
+	
