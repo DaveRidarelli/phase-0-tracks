@@ -1,10 +1,12 @@
 class Santa
+	attr_reader :age, :ethnicity
+	attr_accessor :gender
 	def initialize(gender,ethnicity)
 		puts "Initializing Santa instance..."
 			@gender = gender
 			@ethnicity = ethnicity
 			@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-			@age = 0
+			@age = rand(141)
 	end
 
 	def speak
@@ -12,7 +14,7 @@ class Santa
 	end
 
 	def eat_milk_and_cookies(cookie_type)
-		puts "#{@ethnicity} #{@gender} santa says that was a good #{cookie_type}!"
+		puts "#That was a good #{cookie_type}!"
 	end
 
 	def celebrate_birthday
@@ -20,28 +22,22 @@ class Santa
 	end
 
 	def get_mad_at(reindeer_name)
-		@reindeer_ranking = @reindeer_ranking.delete(reindeer_name)
-		@reindeer_ranking = @reindeer_ranking.push(reindeer_name)
-	end
-
-	def gender=(new_gender)
-		@gender = new_gender
-	end
-
-	def age
-		@age
-	end
-
-	def ethnicity
-		@ethnicity
+		@reindeer_ranking.delete(reindeer_name)
+		@reindeer_ranking << (reindeer_name)
 	end
 end
-
-klaus = Santa.new("male","black")
+#DRIVER CODE
+puts
+klaus = Santa.new("male","Japanese")
 klaus.speak
 klaus.eat_milk_and_cookies("warm chocolate chip cookie")
-puts klaus
+puts klaus.age
+puts klaus.celebrate_birthday
+puts klaus.get_mad_at("Prancer")
 puts "#{klaus.ethnicity} santa is #{klaus.age} years old"
+klaus.gender = "It's a Mystery!"
+puts "Santa's new gender is #{klaus.gender}!"
+
 
 # santas = []
 # santas << Santa.new("agender", "black")
