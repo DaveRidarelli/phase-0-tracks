@@ -26,6 +26,7 @@ class Santa
 		@reindeer_ranking << (reindeer_name)
 	end
 end
+
 #DRIVER CODE
 puts
 klaus = Santa.new("male","Japanese")
@@ -38,7 +39,6 @@ puts "#{klaus.ethnicity} santa is #{klaus.age} years old"
 klaus.gender = "It's a Mystery!"
 puts "Santa's new gender is #{klaus.gender}!"
 
-
 # santas = []
 # santas << Santa.new("agender", "black")
 # santas << Santa.new("female", "Latino")
@@ -48,13 +48,15 @@ puts "Santa's new gender is #{klaus.gender}!"
 # santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
 # santas << Santa.new("N/A", "N/A")
 
-# santas = []
-# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-# example_genders.length.times do |i|
-#   santas <<  Santa.new(example_genders[i], example_ethnicities[i])
-# end
+example_genders.length.times do |i|
+  santas <<  Santa.new(example_genders[i], example_ethnicities[i])
+end
+
+p santas
 
 # santas.each do |claus|
 # 	claus.eat_milk_and_cookies("delicious choco choco chip cookie")
