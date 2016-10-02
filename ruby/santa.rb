@@ -25,19 +25,30 @@ class Santa
 		@reindeer_ranking.delete(reindeer_name)
 		@reindeer_ranking << (reindeer_name)
 	end
+
 end
 
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
 #DRIVER CODE
-puts
-klaus = Santa.new("male","Japanese")
-klaus.speak
-klaus.eat_milk_and_cookies("warm chocolate chip cookie")
-puts klaus.age
-puts klaus.celebrate_birthday
-puts klaus.get_mad_at("Prancer")
-puts "#{klaus.ethnicity} santa is #{klaus.age} years old"
-klaus.gender = "It's a Mystery!"
-puts "Santa's new gender is #{klaus.gender}!"
+
+counter = 0
+while counter < 63
+
+klaus = Santa.new(example_genders.sample,example_ethnicities.sample)
+
+# klaus.speak
+# klaus.eat_milk_and_cookies("warm chocolate chip cookie")
+# puts klaus.age
+# puts klaus.celebrate_birthday
+# puts klaus.get_mad_at("Prancer")
+
+puts "#{klaus.ethnicity} #{klaus.gender} santa is #{klaus.age} years old"
+counter += 1
+end
+
 
 # santas = []
 # santas << Santa.new("agender", "black")
@@ -48,15 +59,10 @@ puts "Santa's new gender is #{klaus.gender}!"
 # santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
 # santas << Santa.new("N/A", "N/A")
 
-santas = []
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-
-example_genders.length.times do |i|
-  santas <<  Santa.new(example_genders[i], example_ethnicities[i])
-end
-
-p santas
+# example_genders.length.times do |i|
+#   santas <<  Santa.new(example_genders[i], example_ethnicities[i])
+#   puts "This #{example_ethnicities} santa's age is #{@age} and they identify as #{example_genders}"
+# end
 
 # santas.each do |claus|
 # 	claus.eat_milk_and_cookies("delicious choco choco chip cookie")
