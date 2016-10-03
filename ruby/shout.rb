@@ -18,7 +18,7 @@ module Shout
   end
 
   def yelling_happily(words)
-  	words + "!!!!!" + " =) "
+  	words + "!!!!!!" + " =) "
   end
 end
 
