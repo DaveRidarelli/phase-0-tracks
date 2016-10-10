@@ -22,7 +22,6 @@ function Sweetcar(name, year, isClean) {
 	console.log("Car Manufactured");
 }
 
-
 console.log("Car Buildin' Time!\n");
 
 var firstCar = new Sweetcar("Ferrari", 2008, true);
