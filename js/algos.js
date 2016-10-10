@@ -6,7 +6,6 @@
 //display variable containing longest string after iteration is
 //complete
 
-
 var strings = ["apple", "peaches", "spooky ghost", "pumpkin pie"];
 var longeststring = "";
 
@@ -20,3 +19,11 @@ function longCheck(array) {
 }
 
 new longCheck(strings)
+
+// create two hash-like objects for testing
+
+var hashyone = {
+	
+	
+}
+
