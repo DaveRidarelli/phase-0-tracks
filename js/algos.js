@@ -85,11 +85,6 @@ for (i = 0; i < 10; i++){
 	console.log("Array #" + (i + 1) + ": " + array);
 }
 
-// I wasn't able to check for the longest string for each generated array. 
+// I wasn't able to check for the longest string for each generated array
 // I kept getting an infinite loop at array #4 when i added console.log(longCheck(array)); 
 // to the end of this loop
-
-
-
-
-
