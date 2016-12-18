@@ -1,0 +1,21 @@
+$ sqlite3 tiptopmedia.db
+SQLite version 3.8.7.2 2014-11-18 20:57:56
+Enter ".help" for usage hints.
+sqlite> .tables
+entertainment_media  media_format
+sqlite> SELECT * FROM entertainment_media
+   ...> ;
+1|The Dark Knight|8.9|1
+2|Fight Club|8.8|1
+3|Band of Brothers|9.5|2
+4|Breaking Bad|9.4|2
+5|The Matrix|8.7|1
+6|Seinfeld|8.9|2
+7|South Park|8.7|2
+8|Seven|8.6|1
+9|Casino Royale|8.0|1
+10|Curb Your Enthusiasm|8.7|2
+sqlite> SELECT * FROM media_format;
+1|Movie
+2|Television
+sqlite> UPDATE entertainment_media SET name="Se7en" WHERE name="Seven";
