@@ -3,6 +3,7 @@ SQLite version 3.8.7.2 2014-11-18 20:57:56
 Enter ".help" for usage hints.
 sqlite> .tables
 entertainment_media  media_format
+
 sqlite> SELECT * FROM entertainment_media
    ...> ;
 1|The Dark Knight|8.9|1
@@ -15,7 +16,57 @@ sqlite> SELECT * FROM entertainment_media
 8|Seven|8.6|1
 9|Casino Royale|8.0|1
 10|Curb Your Enthusiasm|8.7|2
+
 sqlite> SELECT * FROM media_format;
 1|Movie
 2|Television
+
 sqlite> UPDATE entertainment_media SET name="Se7en" WHERE name="Seven";
+
+sqlite> SELECT * FROM entertainment_media, media_format WHERE
+   ...> entertainment_media.media_type_id = media_format.id;
+1|The Dark Knight|8.9|1|1|Movie
+2|Fight Club|8.8|1|1|Movie
+3|Band of Brothers|9.5|2|2|Television
+4|Breaking Bad|9.4|2|2|Television
+5|The Matrix|8.7|1|1|Movie
+6|Seinfeld|8.9|2|2|Television
+7|South Park|8.7|2|2|Television
+8|Se7en|8.6|1|1|Movie
+9|Casino Royale|8.0|1|1|Movie
+10|Curb Your Enthusiasm|8.7|2|2|Television
+
+sqlite> SELECT entertainment_media.name, entertainment_media.imdb_rating,
+   ...> media_format.name FROM entertainment_media JOIN media_format ON entertainment_media.media_type_id = media_format.id;
+The Dark Knight|8.9|Movie
+Fight Club|8.8|Movie
+Band of Brothers|9.5|Television
+Breaking Bad|9.4|Television
+The Matrix|8.7|Movie
+Seinfeld|8.9|Television
+South Park|8.7|Television
+Se7en|8.6|Movie
+Casino Royale|8.0|Movie
+Curb Your Enthusiasm|8.7|Television
+
+sqlite> DELETE FROM entertainment_media WHERE name="Curb Your Enthusiasm" AND imdb_rating = 8.7;
+
+sqlite> SELECT entertainment_media.name,media_format.name
+   ...> FROM entertainment_media
+   ...> LEFT JOIN media_format
+   ...> on entertainment_media.media_type_id = media_format.id;
+The Dark Knight|Movie
+Fight Club|Movie
+Band of Brothers|Television
+Breaking Bad|Television
+The Matrix|Movie
+Seinfeld|Television
+South Park|Television
+Se7en|Movie
+Casino Royale|Movie
+
+
+
+
+
+
