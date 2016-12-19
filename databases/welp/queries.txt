@@ -1,0 +1,17 @@
+sqlite> SELECT businesses.name, reviews.comment, users.last_name FROM
+   ...> businesses JOIN reviews ON businesses.id=reviews.business_id
+   ...> JOIN users ON users.id=reviews.user_id;
+
+Grundy Hollow Wedding Chapel|Beautiful Rustic Chapel!|Pitt
+Amir's Towing|Very Mediocre Towing|Kaling
+The Beagle Nightclub|Best Nightclub Evar!|Jolie
+Lotus Yoga|Very Superstitious About This Yoga Studio|Wonder
+
+sqlite> SELECT users.first_name,users.last_name, businesses.name, reviews.stars, reviews.comment FROM users
+   ...> JOIN businesses ON reviews.user_id=users.id
+   ...> JOIN reviews ON reviews.business_id=businesses.id;
+
+Bradford|Pitt|Grundy Hollow Wedding Chapel|4|Beautiful Rustic Chapel!
+Mandy|Kaling|Amir's Towing|2|Very Mediocre Towing
+Angela|Jolie|The Beagle Nightclub|5|Best Nightclub Evar!
+Steven|Wonder|Lotus Yoga|3|Very Superstitious About This Yoga Studio
